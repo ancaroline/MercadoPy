@@ -110,7 +110,12 @@ def fechar_pedido() -> None:
 
 
 def pega_produto_por_codigo(codigo: int) -> Produto:
-    pass
+    p: Produto = None
+
+    for produto in produtos:
+        if produto.codigo == codigo:
+            p = produto
+    return p
 
 
 if __name__ == '__main__':
