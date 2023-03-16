@@ -4,7 +4,7 @@ from utils.helper import formata_float_str_moeda
 class Produto:
     contador: int = 1
 
-    def __init(self, nome: str, preco: float) -> None:
+    def __init__(self, nome: str, preco: float) -> None:
         self.__codigo: int = Produto.contador
         self.__nome: str = nome
         self.__preco: float = preco
