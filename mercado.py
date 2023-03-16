@@ -13,8 +13,38 @@ def main() -> None:
 
 
 def menu() -> None:
-    pass
+    print('====================')
+    print('=== Bem-vindo(a) ===')
+    print('==== Mercadinho ====')
+    print('====================')
 
+    print('Selecione uma opção abaixo: ')
+    print('1 - Cadastrar produto')
+    print('2 - Listar produtos')
+    print('3 - Comprar produto')
+    print('4 - Visualizar carrinho')
+    print('5 - Fechar pedido')
+    print('6 - Sair do sistema')
+
+    opcao: int = int(input())
+
+    if opcao == 1:
+        cadastrar_produto()
+    elif opcao == 2:
+        listar_produto()
+    elif opcao == 3:
+        comprar_produto()
+    elif opcao == 4:
+        visualizar_carrinho()
+    elif opcao == 5:
+        fechar_pedido()
+    elif opcao == 6:
+        print('Volte sempre!')
+        sleep(2)
+        exit()
+    else:
+        print('Opção inválida.')
+        menu()
 
 def cadastrar_produto() -> None:
     pass
